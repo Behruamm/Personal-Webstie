@@ -1,0 +1,52 @@
+body {
+    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif; /* Set a global font */
+    background-color: #f4f4f4; /* Background color for the page */
+    height: 100%;
+}
+
+nav {
+    background-color: #333; /* Background color of the nav bar */
+    padding: 10px 0; /* Padding for the nav bar */
+    max-width: auto;
+    margin:0 auto;
+
+    
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display nav items in a row */
+    justify-content: center; /* Center the nav items */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between nav items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color for links */
+    padding: 10px 15px; /* Padding for links */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Background color on hover */
+}
+
+section {
+    max-width: 1500px; /* Set a maximum width for the sections */
+    width: 90%; /* Set the width to 90% of the parent container */
+    margin: 20px auto; /* Center sections with auto margins */
+    padding: 20px; /* Padding inside the sections */
+    background-color: white; /* Background color for the sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Optional: Centering Content Inside Sections */
+section h1, section h2, section p {
+    text-align: center;
+}
