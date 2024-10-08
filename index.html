@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>  
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Behram's Space</title>
         <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
 
     <body>
 
-        <!--Navigation Bar-->
-        <nav>
-            <ul>
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#case-study">About</a></li>
-              <li><a href="#testimonial">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
+        <header class="header">
+            <a href="#home" class="logo">Behram
+            <span>Shukur</span></a>
 
-        <!--Hero Section-->
-        <section id="hero" class="'hero">
-            <h1>A Business Consultant Specialize of One Man Company</h1>
-            <p>I'm a Ex-Startup Co-Founder with trackable record, who is lived in China, Turkey, UK.</p>
-            <button id="contact-us" class="contact-us">Contact Me</button>
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" class="'active">Home</a>
+                <a href="#achievement">Achievement</a>
+                <a href="#services">Services</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi, It's <span>Behram</span></h1>
+                <h3 class="text-animation">I'm a <span></span></h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Voluptatem, labore dolore! Nostrum consequuntur 
+                    molestiae optio magnam similique unde, sed neque 
+                    soluta, asperiores aut nesciunt ad eligendi corrupti 
+                    quis blanditiis voluptas?
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abuduxukuer-baikelamu-1440a732b/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/Behruamm" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="https://x.com/Behram0329" target="_blank"><i class='bx bxl-twitter'></i></a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#" class="btn">Hire</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+            </div>
+
+                <div class="home-img">
+                    <img src="1.jpg" alt="Profile Picture">
+                </div>
+
         </section>
 
-        <section id="case-study" class="case-study">
-            <h2>Case Study</h2>
-            
-        </section>
-
-        <section id="testimonial" class="testimonial">
-            <h2>Testimonial</h2>
-        </section>
-
-        <section id="faq" class="faq">
-            <h2>FAQ's</h2>
-        </section>
 
 
-        </body>
+        <script src="script.js"></script>
+    </body>
 
-    </html>
+</html>
