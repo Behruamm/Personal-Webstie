@@ -36,6 +36,7 @@
     align-items: center;
     z-index: 5;
   }
+ 
   .logo {
     font-size: 3rem;
     color: var(--text-color);
@@ -103,6 +104,10 @@
     margin-top: 1.5rem;
     line-height: 1;
   }
+  .location{
+    text-decoration: line-through;
+    color: orange;
+  }
   .home-img {
     border-radius: 50%;
   }
@@ -163,6 +168,9 @@
     transform: scale(1.05);
     box-shadow: 0 0 50px var(--main-color);
   }
+  .btn:active {
+    transform: scale(0.75); /* Scale down the button */
+  }
   .btn-group {
     display: flex;
     align-items: center;
@@ -214,19 +222,19 @@
     }
     21%,
     40% {
-      content: "Solo Entre$$$";
+      content: "Digital Marketer";
     }
     41%,
     60% {
-      content: "Digital Marketer";
+      content: "Solopreneur";
     }
     61%,
     80% {
-      content: "Solo Entre$$$";
+      content: "Data Scientist";
     }
     81%,
     100% {
-      content: "Data Scientist";
+      content: "Web Developer";
     }
   }
   @keyframes typing {
@@ -380,7 +388,7 @@
     gap: 2.5rem;
   }
   .service-box {
-    background-color: var(--main-color);
+    background-color: whitesmoke;
     height: 300px;
     border-radius: 3rem;
     border: 5px solid transparent;
@@ -392,6 +400,7 @@
     color: black;
     border: 5px solid var(--main-color);
     transform: scale(1.03);
+    
   }
   .service-box .service-info {
     display: flex;
@@ -409,7 +418,7 @@
   }
   .service-info p {
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 300;
     max-height: 100px;
     line-height: 1.7;
     margin: auto;
@@ -464,12 +473,15 @@
   .testimonial-item h2 {
     font-size: 2.8rem;
   }
+  .testimonial-item h3 {
+    font-size: 1.6rem;
+    color: orange;
+  }
   .testimonial-item p {
     font-size: 1.3rem;
   }
-  #star {
-    color: gold;
-    font-size: 2rem;
+  .strikethrough{
+    text-decoration: line-through;
   }
 
 .contact {
@@ -480,7 +492,7 @@
   color: white;
 }
 .contact form {
-  display: flex;
+  width: 50rem;
   align-items: center;
   justify-content: center;
   gap: 3rem;
@@ -504,9 +516,12 @@
   margin: 1.5rem 0;
   resize: none;
 }
+
 .contact form .btn {
   margin-top: 2rem;
 }
+
+
 
   .footer {
     position: relative;
@@ -584,7 +599,7 @@
       padding: 10rem 3% 2rem;
     }
     .timeline-items::before {
-      left: 7px;
+      left: 8px;
     }
     .timeline-item:nth-child(odd) {
       padding-right: 0;
@@ -659,5 +674,8 @@
     }
     .services-container{
       grid-template-columns: repeat(1,1fr);
+      height: 100%;
     }
+    
+    
   }
